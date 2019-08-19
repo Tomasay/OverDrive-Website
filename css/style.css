@@ -48,6 +48,7 @@ header{
 p{
     padding-left: 20%;
     padding-right: 20%;
+    text-align: center;
 }
 
 a:link{
@@ -187,6 +188,31 @@ iframe{
     border:2px solid #9b104c;
 }
 
+form{
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 500px;
+}
+
+.email{
+    display: block;
+    float: left;
+    width: 75%;
+    border-radius: 12px;
+}
+
+.email p{
+    padding: 10px;
+}
+
+.button{
+    width: 20%;
+    margin-left: 5%;
+    border-radius: 10px;
+}
+
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   #gallery img{
@@ -200,6 +226,20 @@ iframe{
         /* Set a specific height */
         min-height: 839px; 
         
+    }
+    
+    form{
+      width: 70%;
+    }
+    
+    .email{
+        display: block;
+        width: 65%
+    }
+
+    .button{
+        width: 30%;
+        margin-left: 5%;
     }
 }
 
@@ -267,7 +307,6 @@ h1 {
     transform: translateY(-15px);
   }
 }
-
 
 .arrow {
   position: absolute;
