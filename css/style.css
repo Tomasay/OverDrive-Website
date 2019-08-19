@@ -62,7 +62,7 @@ a:link{
 
 #cover{
     /* The image used */
-  background-image: url("../media/Poster.png");
+  background-image: url("../media/Website%20Poster.png");
     
   /* Set a specific height */
   min-height: 1100px; 
@@ -191,6 +191,13 @@ iframe{
   /* For mobile phones: */
   #gallery img{
         width: 300px;
+    }
+    
+    #cover{
+        /* The image used */
+        background-image: url("../media/Website%20Poster%20Mobile.png");
+        /* Set a specific height */
+        height: 100%;
     }
 }
 
