@@ -10,11 +10,19 @@ function getData(){
         event.preventDefault();
         $('html,body').animate({scrollTop:$(this.hash).offset().top - 55}, 1000);
     });
+    
+    scroll();
 }
 
 function scroll(){
     //Update header opacity
-    header.style.backgroundColor = "rgba(0,0,0," + window.scrollY / 1000 + ")";
+    
+    if(window.innerWidth > 768){
+        header.style.backgroundColor = "rgba(0,0,0," + window.scrollY / 1000 + ")";
+    }
+    else{
+        header.style.backgroundColor = "rgb(0,0,0)";
+    }
     
     //Update arrow and gradient opacity
     $(".arrow").css("opacity", 1 - $(window).scrollTop() / 500);   document.getElementById("coverGradient").style.opacity = 1 - $(window).scrollTop() / 500;  
