@@ -70,7 +70,7 @@ a:link{
     height: 100%;
 
     /* Create the parallax scrolling effect */
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
