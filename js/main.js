@@ -1,7 +1,7 @@
 window.onload = getData;
 let header;
 
-
+let screenWidth; let screenHeight;
 
 function getData(){
     header = document.querySelector("header");
@@ -13,11 +13,18 @@ function getData(){
         $('html,body').animate({scrollTop:$(this.hash).offset().top - 55}, 1000);
     });
     
-    $('#cover').height($(window).height());
+    screenWidth = $(window).width();
+    screenHeight = $(window).height();
+    
+    document.getElementById("test").innerHTML = (screenWidth + "x" + screenHeight)
+    //screenWidth /=2;
+    document.getElementById("cover").style.height = screenHeight + "px";
+    
+    /*$('#cover').height($(window).height());
 
     $(window).resize(function () {
         $('#cover').height($(window).height());
-    })
+    })*/
     
     scroll();
 }
