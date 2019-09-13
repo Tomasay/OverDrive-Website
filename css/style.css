@@ -64,7 +64,10 @@ a:link{
     background-image: url("../media/Website%20Poster.png");
 
     /* Set a specific height */
-    min-height: 1100px; 
+    /*min-height: 1100px;*/
+    
+    width: 100%;
+    height: 100%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -204,7 +207,7 @@ form{
     
     #cover{
         /* The image used */
-        background-image: url("../media/Website%20Poster%20Mobile.png");
+        /*background-image: url("../media/Website%20Poster%20Mobile.png");*/
         
         /* Set a specific height */
         min-height: 839px; 

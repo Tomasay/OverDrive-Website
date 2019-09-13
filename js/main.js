@@ -1,6 +1,8 @@
 window.onload = getData;
 let header;
 
+
+
 function getData(){
     header = document.querySelector("header");
     document.addEventListener("scroll", scroll)
@@ -10,6 +12,12 @@ function getData(){
         event.preventDefault();
         $('html,body').animate({scrollTop:$(this.hash).offset().top - 55}, 1000);
     });
+    
+    $('#cover').height($(window).height());
+
+    $(window).resize(function () {
+        $('#cover').height($(window).height());
+    })
     
     scroll();
 }
