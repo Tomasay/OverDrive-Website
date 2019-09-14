@@ -45,8 +45,8 @@ header{
 }
 
 p{
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 30%;
+    padding-right: 30%;
     text-align: center;
 }
 
@@ -201,6 +201,11 @@ form{
 /*Mobile shit******************************************************************/
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+    p{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    
   #gallery img{
         width: 300px;
     }
