@@ -18,7 +18,6 @@ function getData(){
 
 function scroll(){
     //Update header opacity
-    
     if(window.innerWidth > 768){
         header.style.backgroundColor = "rgba(0,0,0," + window.scrollY / 1000 + ")";
     }
@@ -27,5 +26,5 @@ function scroll(){
     }
     
     //Update arrow and gradient opacity
-    $(".arrow").css("opacity", 1 - $(window).scrollTop() / 500);   document.getElementById("coverGradient").style.opacity = 1 - $(window).scrollTop() / 500;  
+    $(".arrow").css("opacity", 1 - $(window).scrollTop() / 500);   document.getElementById("coverGradient").style.opacity = 1 - $(window).scrollTop() / 500;
 }
