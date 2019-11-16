@@ -11,7 +11,8 @@ function getData(){
         $('html,body').animate({scrollTop:$(this.hash).offset().top - 55}, 1000);
     });
     
-    document.getElementById("cover").style.height = $(window).height() + "px";
+    updateCoverSize();
+    window.onresize = updateCoverSize();
     
     scroll();
 }
@@ -27,4 +28,8 @@ function scroll(){
     
     //Update arrow and gradient opacity
     $(".arrow").css("opacity", 1 - $(window).scrollTop() / 500);   document.getElementById("coverGradient").style.opacity = 1 - $(window).scrollTop() / 500;
+}
+
+function updateCoverSize(){
+    document.getElementById("cover").style.height = $(window).height() + "px";
 }
