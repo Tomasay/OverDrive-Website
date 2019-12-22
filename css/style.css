@@ -101,6 +101,13 @@ a:visited{
     padding-right: 2%;
 }
 
+
+#download a{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #download img{
     display: block;
     margin-left: auto;
