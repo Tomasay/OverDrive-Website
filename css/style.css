@@ -65,7 +65,7 @@ a:visited{
 
 #cover{
     /* The image used */
-    background-image: url("../media/Website%20Poster.png");
+    background-image: url("../media/Website%20Poster.jpg");
 
     /* Set a specific height */
     /*min-height: 1100px;*/
@@ -231,7 +231,7 @@ form{
     
     #cover{
         /* The image used */
-        background-image: url("../media/Website%20Poster%20Mobile.png");*/
+        background-image: url("../media/Website%20Poster%20Mobile.jpg");*/
         background-attachment: scroll;
         /* Set a specific height */
         /*min-height: 839px; */
