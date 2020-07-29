@@ -50,6 +50,10 @@ p{
     text-align: center;
 }
 
+a{
+    white-space: nowrap;
+}
+
 a:link{
     color: deepskyblue;
 }
